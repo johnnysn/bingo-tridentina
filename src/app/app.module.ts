@@ -12,6 +12,8 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
+import {MatCardModule} from "@angular/material/card";
+import {MatSidenavModule} from "@angular/material/sidenav";
 
 const routes: Routes = [
   { path: '', component: StartComponent },
@@ -33,7 +35,9 @@ const routes: Routes = [
     MatIconModule,
     MatInputModule,
     MatButtonModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatCardModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,14 +1,23 @@
-<h1>
-  {{tela}}
-</h1>
+<mat-card>
+  <mat-card-content>
+    <h1>
+      {{tela}}
+    </h1>
+
+    <hr>
+    <div class="row">
+      <div *ngFor="let n of gone" class="col-1">{{ n }}</div>
+    </div>
+
+  </mat-card-content>
+</mat-card>
 
 <br>
 
 <p>
 <button type="button" mat-raised-button color="accent" [disabled]="btnDisable" (click)="gerar()" [style.width.px]=200 class="mb-2">Gerar número</button>
   <br>
-<button type="button" mat-raised-button color="primary" *ngIf="this.numbers.length === 0" [routerLink]="'/'" [style.width.px]=200 class="mb-2">Retornar</button>
+<button type="button" mat-raised-button color="warn" (click)="init()" [style.width.px]=200 class="mb-2">Recomeçar</button>
+  <br>
+<button type="button" mat-raised-button color="primary" [routerLink]="'/'" [style.width.px]=200 class="mb-2">Voltar</button>
 </p>
-<hr>
-
-<p>{{ gone.join(', ') }}</p>

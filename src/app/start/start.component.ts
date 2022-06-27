@@ -10,8 +10,8 @@ import {MatSnackBar} from "@angular/material/snack-bar";
 })
 export class StartComponent implements OnInit {
   form = new FormGroup({
-    'start': new FormControl(''),
-    'end': new FormControl('')
+    'start': new FormControl('1'),
+    'end': new FormControl('20')
   });
 
   constructor(private router: Router, private snackBar: MatSnackBar) { }
