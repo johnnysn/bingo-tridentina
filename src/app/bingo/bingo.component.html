@@ -1,0 +1,14 @@
+<h1>
+  {{tela}}
+</h1>
+
+<br>
+
+<p>
+<button type="button" mat-raised-button color="accent" [disabled]="btnDisable" (click)="gerar()" [style.width.px]=200 class="mb-2">Gerar número</button>
+  <br>
+<button type="button" mat-raised-button color="primary" *ngIf="this.numbers.length === 0" [routerLink]="'/'" [style.width.px]=200 class="mb-2">Retornar</button>
+</p>
+<hr>
+
+<p>{{ gone.join(', ') }}</p>
